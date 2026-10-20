@@ -1,10 +1,10 @@
 # Repositorio_2º_DAW
 
-# 💻 Desarrollo de Aplicaciones Web (DAW) - 2º Curso
+# Desarrollo de Aplicaciones Web (DAW) - 2º Curso
 
 This repository will be used for the 2nd year of the Higher Degree in Web Application Development (DAW). Here you will find all the projects, practices, and exercises developed throughout the academic year.
 
-## 📚 Asignaturas / Subjects
+## Asignaturas / Subjects
 
 *   **Desarrollo Web en Entorno Servidor (DWES)** 
     *   *Technologies:* PHP, Databases (SQL/NoSQL).
@@ -23,5 +23,5 @@ This repository will be used for the 2nd year of the Higher Degree in Web Applic
 *   **Inglés Profesional / Professional English** 
     *   *Concepts:* Technical and professional communication in English.
 
-## 📁 Repository Structure
+## Repository Structure
 The project is organized into folders corresponding to each subject to maintain a clean and trackable workflow.
