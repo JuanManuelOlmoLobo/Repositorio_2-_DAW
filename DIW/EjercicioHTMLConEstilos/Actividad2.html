@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Formación de la Tierra(hace 4.540 millones de años)</title>
-        <style>
-            body {font-family: Georgia,serif; margin: 0;background-color: #FDFBF7; padding: 40px 20px; color: #2C221E;}
-            header, main, footer {max-width: 800px; margin: auto; color: #8B5A2B;}
-            div a {margin: .8rem;}
-            p {line-height: 1.7;font-size: 1.15rem;}    
-            article {max-width: 720px; margin: 0 auto;}
-            h1{color: #8B5A2B; font-size: 2.5rem; line-height: 1.2; margin-bottom: 30px; text-align: center; border-bottom: 2px solid #F5EFEB; padding-bottom: 15px;}
-            h2 {color: #A0522D; font-size: 1.6rem; margin-top: 0; margin-bottom: 12px;}
-            aside { background-color: #FDFBF7;padding: .8rem; border-left: 4px solid #999;}
-        </style>
-    </head>
-    <body>
-        <article>
-            <h1></h1>
-        </article>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Reserva de Visita Guiada por Algeciras</title>
+  <style>
+    body { font-family: system-ui; margin: 1rem; max-width: 600px; }
+    fieldset { border: 1px solid #ccc; padding: 1rem; border-radius: 6px; }
+    label { display: block; margin-top: .7rem; }
+    input[type=range] { width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>Reserva tu ruta guiada histórica</h1>
+
+  <form action="#" aria-describedby="ayuda-ruta">
+    <fieldset>
+      <legend>Datos de la Reserva</legend>
+
+      <label>Nombre completo
+        <input type="text" name="nombre" required />
+      </label>
+
+      <label>Correo Electrónico
+        <input type="email" name="email" required />
+      </label>
+
+      <label>Fecha de la visita
+        <input type="date" name="fecha" required />
+      </label>
+
+      <p>Turno de la visita</p>
+      <label><input type="radio" name="turno" value="manana" required /> Mañana (Murallas y Plaza Alta)</label>
+      <label><input type="radio" name="turno" value="tarde" required /> Tarde (Faro de Carnero y Puerto)</label>
+
+      <label>Nivel de detalle histórico (1 básico – 10 avanzado)
+        <input type="range" name="nivel" min="1" max="10" value="5" aria-describedby="ayuda-ruta" />
+      </label>
+      <small id="ayuda-ruta">Selecciona la profundidad deseada para las explicaciones.</small>
+
+      <label>
+        <input type="checkbox" name="guia" /> Incluir audioguía
+      </label>
+    </fieldset>
+
+    <button type="submit" style="margin-top:1rem; padding:.5rem 1rem;">Confirmar Reserva</button>
+  </form>
+</body>
 </html>

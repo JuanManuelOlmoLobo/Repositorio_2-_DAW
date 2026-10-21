@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Próximamente: Exposición Algeciras 1906</title>
+  <style>
+    :root { --prim: #005A9C; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      margin: 0;
+      padding: 1rem;
+      background-color: #f0f4f8;
+    }
+    h1 { font-size: 2.8rem; margin: .5rem 0; color: #1e293b; }
+    p { font-size: 1.25rem; color: #64748b; margin: 0 0 1.5rem; }
+    button {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .8rem 1.6rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: var(--prim);
+      color: #fff;
+      cursor: pointer;
+      transition: transform .3s;
+    }
+    button:hover, button:focus { transform: scale(1.05); }
+    @media (prefers-reduced-motion: reduce) {
+      button { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Nueva Exposición: La Conferencia de Algeciras de 1906</h1>
+  <p>Muestra interactiva con documentos inéditos y fotografías históricas.</p>
+  <button>
+    Avísame cuando abra
+  </button>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Galería Fotográfica de Algeciras</title>
+  <style>
+    body { font-family: system-ui; margin: 1rem; }
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    figure { margin: 0; border: 1px solid #ddd; padding: .5rem; border-radius: 6px; background: #fff; }
+    figcaption { text-align: center; margin-top: .4rem; font-size: .9rem; color: #444; font-weight: 600; }
+    img { width: 100%; height: auto; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Patrimonio y Lugares Emblemáticos de Algeciras</h1>
+  <section class="grid">
+    <figure>
+      <img src="..\imagenes\plazaAltaAlgeciras.jpg" alt="Plaza Alta de Algeciras" />
+      <figcaption>Plaza Alta y Parroquia de la Palma</figcaption>
+    </figure>
+    <figure>
+      <img src="..\imagenes\murallasMeriniesAlgeciras.jpg" alt="Murallas Meriníes" />
+      <figcaption>Restos de las Murallas Meriníes (S. XIV)</figcaption>
+    </figure>
+    <figure>
+      <img src="..\imagenes\parqueMariaCristinaAlgeciras.jpg" alt="Parque María Cristina" />
+      <figcaption>Parque María Cristina</figcaption>
+    </figure>
+    <figure>
+      <img src="..\imagenes\puertoAlgeciras.jpg" alt="Puerto de Algeciras" />
+      <figcaption>Bahía y Puerto de Algeciras</figcaption>
+    </figure>
+  </section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Puntos de Interés en Algeciras</title>
+  <style>
+    body {
+      font-family: system-ui;
+      margin: 1rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .card { border: 2px solid; padding: 1rem; border-radius: 6px; background: #fafafa; }
+    [data-category="historia"] { border-color: #8b5cf6; }
+    [data-category="naturaleza"] { border-color: #10b981; }
+    [data-category="gastronomia"] { border-color: #f59e0b; }
+    .ubicacion { font-weight: 700; color: #333; }
+  </style>
+</head>
+<body>
+  <article class="card" data-category="historia">
+    <h2>Factoría Romana de Salazón</h2>
+    <p class="ubicacion">San García</p>
+    <p>Antiguo complejo industrial del siglo I d.C. para la elaboración de garum.</p>
+  </article>
+
+  <article class="card" data-category="naturaleza">
+    <h2>Parque Natural del Estrecho</h2>
+    <p class="ubicacion">Zona Costera de Algeciras</p>
+    <p>Espacio protegido clave para la migración de aves y biodiversidad.</p>
+  </article>
+
+  <article class="card" data-category="gastronomia">
+    <h2>Ortiguillas y Pescaito Frito</h2>
+    <p class="ubicacion">Mercado de Abastos</p>
+    <p>Especialidades gastronómicas tradicionales de la Bahía.</p>
+  </article>
+</body>
+</html>
