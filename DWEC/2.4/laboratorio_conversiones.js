@@ -3,14 +3,14 @@ var txtEntrada = document.getElementById("txtEntrada");
 var pantallaSalida = document.getElementById("pantallaSalida");
 
 document.getElementById("btnAnalizar").addEventListener("click", () =>{
-// Normalización de la entrada literal a tipo primitivo o de referencia real
+
   let valorReal;
   let textoEntrada= txtEntrada.value;
   
   try {
     valorReal = JSON.parse(textoEntrada);
   } catch (error) {
-    // Casos especiales que no son JSON válido pero representan primitivos en JS:
+    
     if (textoEntrada === "undefined") {
       valorReal = undefined;
     } else if (textoEntrada === "NaN") {
