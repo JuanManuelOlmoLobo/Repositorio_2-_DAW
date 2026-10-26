@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Multimedia - 2</title>
+</head>
+<body>
+  <header>
+    <h1>Contenido Incrustado - 2</h1>
+    <nav>
+      <a href="Página1.html">Volver al Inicio</a>
+    </nav>
+  </header>
+  <hr>
+  <main>
+    <article>
+      <h2>Sección de Plugins y Gráficos</h2>
+      <section>
+        <h3>4. Contexto de Navegación Anidado</h3>
+        <iframe src="Página1.html" title="Documento de ejemplo externo" width="500" height="250"></iframe>
+      </section>
+      <br>
+      <section>
+        <h3>5. Recursos Externos y Plugins</h3>
+        <embed src="" width="200" height="100">
+      </section>
+      <br>
+      <section>
+        <h3>6. Lienzo de Mapa de Bits</h3>
+        <canvas id="miCanvas" width="150" height="150"></canvas>
+        <script>
+          const canvas = document.getElementById('miCanvas');
+          if (canvas.getContext) {
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#000000';
+            ctx.fillRect(10, 10, 130, 130);
+          }
+        </script>
+      </section>
+      <br>
+      <section>
+        <h3>7. Gráficos Vectoriales Escalables</h3>
+        <svg width="150" height="150">
+          <circle cx="75" cy="75" r="50" fill="black" />
+        </svg>
+      </section>
+    </article>
+  </main>
+  <hr>
+  <footer>
+    <p>Desarrollo Web - Práctica de Contenido Incrustado</p>
+  </footer>
+</body>
+</html>
