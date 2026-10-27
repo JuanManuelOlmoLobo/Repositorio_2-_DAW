@@ -4,18 +4,30 @@
   <meta charset="UTF-8"/>
   <title>Puntos de Interés en Algeciras</title>
   <style>
-    body {
-      font-family: system-ui;
-      margin: 1rem;
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    body { 
+      font-family: system-ui, sans-serif; margin: 1rem auto; max-width: 1100px; padding: 1rem; background-color: #f8f9fa; color: #333333; 
     }
-    .card { border: 2px solid; padding: 1rem; border-radius: 6px; background: #fafafa; }
-    [data-category="historia"] { border-color: #8b5cf6; }
-    [data-category="naturaleza"] { border-color: #10b981; }
-    [data-category="gastronomia"] { border-color: #f59e0b; }
-    .ubicacion { font-weight: 700; color: #333; }
+    .card { 
+      border: 1px solid #ccc; border-top: 5px solid; padding: 1rem; border-radius: 6px; background-color: #ffffff; margin-bottom: 1rem; 
+    }
+    .card h2 { 
+      margin: 0 0 0.5rem 0; font-size: 1.2rem; color: #111111; 
+    }
+    [data-category="historia"] { 
+      border-top-color: #8b5cf6; 
+    }
+    [data-category="naturaleza"] { 
+      border-top-color: #10b981; 
+    }
+    [data-category="gastronomia"] { 
+      border-top-color: #f59e0b; 
+    }
+    .ubicacion { 
+      font-weight: bold; font-size: 0.85rem; color: #555555; display: block; margin-bottom: 0.5rem; 
+    }
+    .card p:last-child { 
+      margin: 0; font-size: 0.95rem; 
+    }
   </style>
 </head>
 <body>
