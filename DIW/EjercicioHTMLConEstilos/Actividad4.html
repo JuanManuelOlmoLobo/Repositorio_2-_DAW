@@ -5,22 +5,24 @@
   <title>Galería Fotográfica de Algeciras</title>
   <style>
     body { 
-      font-family: system-ui, sans-serif; margin: 1rem auto; max-width: 800px; padding: 1rem; background-color: #f8f9fa; color: #333333; 
+      font-family: system-ui, sans-serif; 
+      max-width: 800px; 
+      margin: auto; 
     }
-    h1 { 
-      text-align: center; color: #111111; margin-bottom: 1.5rem; font-size: 1.6rem; 
+    h1, figcaption { 
+      text-align: center; 
     }
     .grid { 
-      display: block; 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+      gap: 1rem; 
     }
     figure { 
-      margin: 0 0 1.5rem 0; background-color: #ffffff; border: 1px solid #cccccc; border-radius: 6px; padding: 0.5rem; 
-    }
-    figcaption { 
-      text-align: center; margin-top: 0.5rem; font-size: 0.95rem; color: #555555; font-weight: bold; 
+      border: 1px solid #cccccc; 
+      padding: 0.5rem; 
     }
     img { 
-      width: 100%; height: auto; display: block; border-radius: 4px; 
+      width: 100%; 
     }
   </style>
 </head>
