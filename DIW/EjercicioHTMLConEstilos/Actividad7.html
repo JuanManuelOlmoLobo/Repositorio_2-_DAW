@@ -7,9 +7,33 @@
     body { 
       font-family: system-ui, sans-serif; margin: 1rem auto; max-width: 1100px; padding: 1rem; background-color: #f8f9fa; color: #333333; 
     }
-    .card { 
-      border: 1px solid #ccc; border-top: 5px solid; padding: 1rem; border-radius: 6px; background-color: #ffffff; margin-bottom: 1rem; 
+    
+
+    /* Una al lado de la otra */
+    .contenedor-cartas.en-linea {
+      display: flex;          
+      gap: 1rem;            
+      justify-content: flex-start;
     }
+    .contenedor-cartas.en-linea .card {
+      flex: 1;
+    }
+
+    /* Una debajo de la otra (Como al inicio) */
+    /*.contenedor-cartas.en-lista {
+      display: flex;
+      flex-direction: column; 
+      gap: 1rem;
+    }*/
+
+    .card { 
+      border: 1px solid #ccc; 
+      border-top: 5px solid; 
+      padding: 1rem; 
+      border-radius: 6px; 
+      background-color: #ffffff; 
+    }
+    
     .card h2 { 
       margin: 0 0 0.5rem 0; font-size: 1.2rem; color: #111111; 
     }
@@ -31,22 +55,28 @@
   </style>
 </head>
 <body>
-  <article class="card" data-category="historia">
-    <h2>Factoría Romana de Salazón</h2>
-    <p class="ubicacion">San García</p>
-    <p>Antiguo complejo industrial del siglo I d.C. para la elaboración de garum.</p>
-  </article>
 
-  <article class="card" data-category="naturaleza">
-    <h2>Parque Natural del Estrecho</h2>
-    <p class="ubicacion">Zona Costera de Algeciras</p>
-    <p>Espacio protegido clave para la migración de aves y biodiversidad.</p>
-  </article>
+  <div class="contenedor-cartas en-linea">
 
-  <article class="card" data-category="gastronomia">
-    <h2>Ortiguillas y Pescaito Frito</h2>
-    <p class="ubicacion">Mercado de Abastos</p>
-    <p>Especialidades gastronómicas tradicionales de la Bahía.</p>
-  </article>
+    <article class="card" data-category="historia">
+      <h2>Factoría Romana de Salazón</h2>
+      <p class="ubicacion">San García</p>
+      <p>Antiguo complejo industrial del siglo I d.C. para la elaboración de garum.</p>
+    </article>
+
+    <article class="card" data-category="naturaleza">
+      <h2>Parque Natural del Estrecho</h2>
+      <p class="ubicacion">Zona Costera de Algeciras</p>
+      <p>Espacio protegido clave para la migración de aves y biodiversidad.</p>
+    </article>
+
+    <article class="card" data-category="gastronomia">
+      <h2>Ortiguillas y Pescaito Frito</h2>
+      <p class="ubicacion">Mercado de Abastos</p>
+      <p>Especialidades gastronómicas tradicionales de la Bahía.</p>
+    </article>
+
+  </div>
+
 </body>
 </html>
